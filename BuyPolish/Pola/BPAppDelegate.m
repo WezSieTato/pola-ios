@@ -5,12 +5,10 @@
 #import "BPTheme.h"
 #import "JSObjection.h"
 #import <AVFoundation/AVFoundation.h>
-#import <Pola-Swift.h>
 
 @implementation BPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [BPAnalyticsHelper configure];
     [self configureObjection];
 
     [self applyAppearance];

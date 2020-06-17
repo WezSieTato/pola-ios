@@ -6,7 +6,6 @@
 #import "BPDoubleAboutRow.h"
 #import "BPTheme.h"
 #import "BPWebAboutRow.h"
-#import <Pola-Swift.h>
 
 @import Objection;
 
@@ -102,7 +101,6 @@ CGFloat const CELL_HEIGHT = 49;
 #pragma mark - table view actions
 
 - (void)didTapReportError:(BPAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:@"Zgłoś błąd w danych"];
 
     JSObjectionInjector *injector = [JSObjection defaultInjector];
     BPReportProblemViewController *reportProblemViewController =
@@ -112,23 +110,18 @@ CGFloat const CELL_HEIGHT = 49;
 }
 
 - (void)didTapTwitter:(BPAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:@"Pola na Twitterze"];
     [[UIApplication sharedApplication] openURL:[[NSURL alloc] initWithString:ABOUT_TWITTER_URL]];
 }
 
 - (void)didTapFacebook:(BPAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:@"Pola na Facebooku"];
     [[UIApplication sharedApplication] openURL:[[NSURL alloc] initWithString:ABOUT_FACEBOOK_URL]];
 }
 
 - (void)didTapRateUs:(BPAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:@"Oceń Polę"];
     [[UIApplication sharedApplication] openURL:[[NSURL alloc] initWithString:ABOUT_APP_STORE_APP_URL]];
 }
 
 - (void)didTapWriteToUs:(BPAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:@"Napisz do nas"];
-
     MFMailComposeViewController *composeViewController = [[MFMailComposeViewController alloc] initWithNibName:nil
                                                                                                        bundle:nil];
     composeViewController.delegate = self;
@@ -140,7 +133,6 @@ CGFloat const CELL_HEIGHT = 49;
 }
 
 - (void)didTapWebRow:(BPWebAboutRow *)row {
-    [BPAnalyticsHelper aboutOpened:row.analyticsName];
     [self.delegate showWebWithUrl:row.url title:row.title];
 }
 

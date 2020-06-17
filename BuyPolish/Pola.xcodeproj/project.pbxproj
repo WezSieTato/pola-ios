@@ -133,11 +133,6 @@
 		9E7BE94D240164690070BF8D /* ScanBarcodePageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94C240164690070BF8D /* ScanBarcodePageUITests.swift */; };
 		9E7BE94F240167A50070BF8D /* RecordVideoPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94E240167A50070BF8D /* RecordVideoPageUITests.swift */; };
 		ABCA9D8499A8FF36227B6C94 /* UIApplication+BPStatusBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA997979B62F78CFCB7E19 /* UIApplication+BPStatusBarHeight.m */; };
-		BDA76B5121DCD718003E9FD6 /* Encodable+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA76B5021DCD718003E9FD6 /* Encodable+Utilities.swift */; };
-		BDA76B5A21DE6248003E9FD6 /* AnalyticsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA76B5921DE6248003E9FD6 /* AnalyticsHelper.swift */; };
-		BDA76B5C21DE64AB003E9FD6 /* AnalyticsEventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA76B5B21DE64AB003E9FD6 /* AnalyticsEventName.swift */; };
-		BDA76B5E21DE64FD003E9FD6 /* AnalyticsParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA76B5D21DE64FD003E9FD6 /* AnalyticsParameters.swift */; };
-		BDA76B6621DFDD04003E9FD6 /* Encodable_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA76B6521DFDD04003E9FD6 /* Encodable_DictionaryTests.swift */; };
 		C06EE3351F20D24E005B2B57 /* BPAPIAccessor+BPCapturedImagesData.m in Sources */ = {isa = PBXBuildFile; fileRef = C06EE3341F20D24E005B2B57 /* BPAPIAccessor+BPCapturedImagesData.m */; };
 		C06EE3391F20D6F5005B2B57 /* BPCapturedImagesUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C06EE3381F20D6F5005B2B57 /* BPCapturedImagesUploadManager.m */; };
 		C082C8B51F22ACBA0026AE11 /* BPCapturedImageResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C082C8B41F22ACBA0026AE11 /* BPCapturedImageResult.m */; };
@@ -364,13 +359,6 @@
 		9E7BE94E240167A50070BF8D /* RecordVideoPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoPageUITests.swift; sourceTree = "<group>"; };
 		ABCA997979B62F78CFCB7E19 /* UIApplication+BPStatusBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+BPStatusBarHeight.m"; sourceTree = "<group>"; };
 		ABCA9A3E3B8A8B7C925052B6 /* UIApplication+BPStatusBarHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+BPStatusBarHeight.h"; sourceTree = "<group>"; };
-		BDA76B3A21DC34A3003E9FD6 /* Pola-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pola-Bridging-Header.h"; sourceTree = "<group>"; };
-		BDA76B5021DCD718003E9FD6 /* Encodable+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Utilities.swift"; sourceTree = "<group>"; };
-		BDA76B5321DCDBD1003E9FD6 /* PolaTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PolaTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		BDA76B5921DE6248003E9FD6 /* AnalyticsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHelper.swift; sourceTree = "<group>"; };
-		BDA76B5B21DE64AB003E9FD6 /* AnalyticsEventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventName.swift; sourceTree = "<group>"; };
-		BDA76B5D21DE64FD003E9FD6 /* AnalyticsParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsParameters.swift; sourceTree = "<group>"; };
-		BDA76B6521DFDD04003E9FD6 /* Encodable_DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable_DictionaryTests.swift; sourceTree = "<group>"; };
 		C06EE3331F20D230005B2B57 /* BPAPIAccessor+BPCapturedImagesData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BPAPIAccessor+BPCapturedImagesData.h"; sourceTree = "<group>"; };
 		C06EE3341F20D24E005B2B57 /* BPAPIAccessor+BPCapturedImagesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BPAPIAccessor+BPCapturedImagesData.m"; sourceTree = "<group>"; };
 		C06EE3371F20D6E7005B2B57 /* BPCapturedImagesUploadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPCapturedImagesUploadManager.h; sourceTree = "<group>"; };
@@ -483,7 +471,6 @@
 				1D08E83D19A7621A00879BD2 /* Images.xcassets */,
 				8455A7EE220D527200F30845 /* LaunchScreen.storyboard */,
 				9E188D91223063EC00325383 /* LaunchScreen.xcassets */,
-				BDA76B3A21DC34A3003E9FD6 /* Pola-Bridging-Header.h */,
 			);
 			path = Pola;
 			sourceTree = "<group>";
@@ -508,10 +495,8 @@
 			isa = PBXGroup;
 			children = (
 				1D08E84C19A7621A00879BD2 /* SupportingFiles */,
-				BDA76B6521DFDD04003E9FD6 /* Encodable_DictionaryTests.swift */,
 				848C6921225D044300D39E90 /* LaunchScreenSnapshotTests.swift */,
 				374B5B891C71C14100E74BBB /* NSDictionary_ParsingTests.m */,
-				BDA76B5321DCDBD1003E9FD6 /* PolaTests-Bridging-Header.h */,
 				847AE94523072E8F00E645ED /* ReferenceImages_64 */,
 			);
 			path = PolaTests;
@@ -667,7 +652,6 @@
 		37B646DCA0870AD66E5EB92B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				BDA76B5021DCD718003E9FD6 /* Encodable+Utilities.swift */,
 				37B6409BC5602C24443D14E4 /* NSDictionary+BPJSON.h */,
 				37B64059D45CBC595213920F /* NSDictionary+BPJSON.m */,
 				37B64F8C2171D2BB76F878FB /* NSString+BPUtilities.h */,
@@ -945,9 +929,6 @@
 		BDA76B5821DE622E003E9FD6 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				BDA76B5B21DE64AB003E9FD6 /* AnalyticsEventName.swift */,
-				BDA76B5921DE6248003E9FD6 /* AnalyticsHelper.swift */,
-				BDA76B5D21DE64FD003E9FD6 /* AnalyticsParameters.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1001,8 +982,6 @@
 				1D08E81F19A7621A00879BD2 /* Sources */,
 				1D08E82019A7621A00879BD2 /* Frameworks */,
 				1D08E82119A7621A00879BD2 /* Resources */,
-				1D648C101A71B46D002B413D /* Fabric */,
-				9E561AA022079124009E661A /* Check GoogleService-Info.plist */,
 				03AA255C38B8901189A3F27E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1168,20 +1147,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pola/Pods-Pola-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1D648C101A71B46D002B413D /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6a4f6710db1c4c62907f73a43eb5e68675cd2c7a $POLA_FABRIC_PRIVATE_KEY\n";
-		};
 		1DBBACF00573373F5562BC56 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1190,22 +1155,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pola-PolaUITests/Pods-Pola-PolaUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-framework/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress-framework/KVNProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/Objection-framework/Objection.framework",
 				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder-framework/UITextView_Placeholder.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Objection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
 			);
@@ -1222,21 +1183,17 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pola-PolaTests/Pods-Pola-PolaTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-framework/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress-framework/KVNProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/Objection-framework/Objection.framework",
 				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder-framework/UITextView_Placeholder.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Objection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1265,20 +1222,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		9E561AA022079124009E661A /* Check GoogleService-Info.plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check GoogleService-Info.plist";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    if [ ! -f \"${PROJECT_DIR}/Pola/GoogleService-Info.plist\" ]; then\n        echo \"error: Add GoogleService-Info.plist to project before release!\" >&2\n        exit 1\n    fi\nfi\n";
 		};
 		B56C0C9EBA4B21C39D72EABD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1332,7 +1275,6 @@
 				37F16AA51CA1BCCF00A310CF /* BPKeyboardViewController.m in Sources */,
 				37B646BC2546890EB330F4FD /* BPTask.m in Sources */,
 				3784331E1C739035008E392B /* BPAboutViewControllerDoubleCell.m in Sources */,
-				BDA76B5E21DE64FD003E9FD6 /* AnalyticsParameters.swift in Sources */,
 				37B647E20B1B2E3F5F0ECFA3 /* BPAPIAccessor.m in Sources */,
 				37B64D4617BA6760E8B4101F /* BPAPIAccessor+BPScan.m in Sources */,
 				374B5B8D1C71C15D00E74BBB /* NSDictionary+Parsing.m in Sources */,
@@ -1340,7 +1282,6 @@
 				37B64FF08BF5367BF9669B33 /* BPUtilities.m in Sources */,
 				37B64E4A4C23A423A7B102CB /* BPScanResult+Utilities.m in Sources */,
 				37B64F7816B23819A90C0456 /* BPLogger.m in Sources */,
-				BDA76B5A21DE6248003E9FD6 /* AnalyticsHelper.swift in Sources */,
 				37B6498848E97978409489A6 /* NSDictionary+BPJSON.m in Sources */,
 				37B6416E16FEB2AD27BB3D9E /* BPAPIResponse.m in Sources */,
 				37B649B3937D6158B554F509 /* BPObjectionModule.m in Sources */,
@@ -1362,7 +1303,6 @@
 				37B6482F8EF3F11BE5ECEAAB /* BPReportProblemView.m in Sources */,
 				37B64B04E790A7948469FA50 /* BPProductImageManager.m in Sources */,
 				375021841CC0F0F800759140 /* BPKeyboardTextView.m in Sources */,
-				BDA76B5121DCD718003E9FD6 /* Encodable+Utilities.swift in Sources */,
 				C09015821F367C7000E8CC38 /* BPWeakTimerTarget.m in Sources */,
 				37B642E8F1F16F59571A854C /* BPImageContainerView.m in Sources */,
 				1D2D50661DC54092000A8958 /* BPExtendedButton.m in Sources */,
@@ -1372,7 +1312,6 @@
 				37B6403420F94515369E0F06 /* BPReport.m in Sources */,
 				37B644C091A98460F4483418 /* BPReportResult.m in Sources */,
 				37B647F36DC4A91682A0566B /* BPKeyboardManager.m in Sources */,
-				BDA76B5C21DE64AB003E9FD6 /* AnalyticsEventName.swift in Sources */,
 				37B64E4E58C1CE8446137CD1 /* BPCompanyCardView.m in Sources */,
 				37B641B5D6F386E7E2A67DF8 /* BPMainProggressView.m in Sources */,
 				C06EE3391F20D6F5005B2B57 /* BPCapturedImagesUploadManager.m in Sources */,
@@ -1407,7 +1346,6 @@
 			files = (
 				374B5B8A1C71C14100E74BBB /* NSDictionary_ParsingTests.m in Sources */,
 				848C6922225D044300D39E90 /* LaunchScreenSnapshotTests.swift in Sources */,
-				BDA76B6621DFDD04003E9FD6 /* Encodable_DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1620,7 +1558,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pola/Pola-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1654,7 +1591,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pola/Pola-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
@@ -1684,7 +1620,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PolaTests/PolaTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1711,7 +1646,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PolaTests/PolaTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

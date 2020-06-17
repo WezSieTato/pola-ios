@@ -9,7 +9,6 @@
 #import "BPScanResult.h"
 #import "NSString+BPUtilities.h"
 #import "UIAlertView+BPUtilities.h"
-#import <Pola-Swift.h>
 
 @import Objection;
 
@@ -123,8 +122,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
         retrieveProductWithBarcode:barcode
                         completion:^(BPScanResult *productResult, NSError *error) {
                             if (!error) {
-                                [BPAnalyticsHelper receivedProductResult:productResult];
-
                                 self.barcodeToProductResult[barcode] = productResult;
                                 [self fillCard:cardView withData:productResult];
                             } else {
@@ -182,8 +179,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
 }
 
 - (void)showReportProblem:(NSString *)barcode productId:(NSNumber *)productId {
-    [BPAnalyticsHelper reportShown:barcode];
-
     JSObjectionInjector *injector = [JSObjection defaultInjector];
     BPReportProblemViewController *reportProblemViewController =
         [injector getObject:[BPReportProblemViewController class] argumentList:@[productId, barcode]];
@@ -192,7 +187,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
 }
 
 - (void)showCaptureVideoWithScanResult:(BPScanResult *)scanResult {
-    [BPAnalyticsHelper teachReportShow:self.lastBardcodeScanned];
     BPCaptureVideoNavigationController *captureVideoNavigationController =
         [[BPCaptureVideoNavigationController alloc] initWithScanResult:scanResult];
     captureVideoNavigationController.captureDelegate = self;
@@ -200,8 +194,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
 }
 
 - (void)didTapMenuButton:(UIButton *)button {
-    [BPAnalyticsHelper aboutOpened:@"About Menu"];
-
     JSObjectionInjector *injector = [JSObjection defaultInjector];
     BPAboutNavigationController *aboutNavigationController = [injector getObject:[BPAboutNavigationController class]];
     aboutNavigationController.infoDelegate = self;
@@ -259,7 +251,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
     }
 
     if ([self addCardAndDownloadDetails:barcode]) {
-        [BPAnalyticsHelper barcodeScanned:barcode type:sourceType];
         [self.castView setInfoTextVisible:NO];
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
         self.lastBardcodeScanned = barcode;
@@ -365,15 +356,6 @@ objection_requires_sel(@selector(productManager), @selector(cameraSessionManager
     self.addingCardEnabled = NO;
 
     [self.castView setButtonsVisible:NO animation:YES];
-
-    NSString *barcode = self.scannedBarcodes[(NSUInteger)cardView.tag];
-    if (!barcode) {
-        return;
-    }
-    BPScanResult *productResult = self.barcodeToProductResult[barcode];
-    if (productResult) {
-        [BPAnalyticsHelper opensCard:productResult];
-    }
 }
 
 - (void)stackViewDidCollapse:(BPStackView *)stackView {
