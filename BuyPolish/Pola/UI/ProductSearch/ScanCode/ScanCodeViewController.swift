@@ -92,8 +92,6 @@ final class ScanCodeViewController: UIViewController {
 
     @objc
     private func tapMenuButton() {
-        AnalyticsHelper.aboutOpened(windowName: .menu)
-
         let vc = AboutViewController()
         let nvc = UINavigationController(rootViewController: vc)
         present(nvc, animated: true, completion: nil)
@@ -160,14 +158,14 @@ final class ScanCodeViewController: UIViewController {
 
 extension ScanCodeViewController: CodeScannerManagerDelegate {
     func didScan(barcode: String) {
-        resultsViewController.add(barcodeCard: barcode, sourceType: .camera)
+        resultsViewController.add(barcodeCard: barcode)
     }
 }
 
 extension ScanCodeViewController: KeyboardViewControllerDelegate {
     func keyboardViewController(_: KeyboardViewController, didConfirmWithCode code: String) {
         hideKeyboardController()
-        resultsViewController.add(barcodeCard: code, sourceType: .keyboard)
+        resultsViewController.add(barcodeCard: code)
     }
 }
 

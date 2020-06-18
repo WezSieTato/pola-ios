@@ -47,7 +47,7 @@ final class ResultsViewController: UIViewController {
         castedView.teachButton.addTarget(self, action: #selector(teachTapped), for: .touchUpInside)
     }
 
-    func add(barcodeCard barcode: String, sourceType: AnalyticsBarcodeSource) {
+    func add(barcodeCard barcode: String) {
         guard isAddingCardEnabled,
             lastResultViewController?.barcode != barcode else {
             return
@@ -61,7 +61,6 @@ final class ResultsViewController: UIViewController {
         }
 
         if addCardAndDownloadDetails(barcode) {
-            AnalyticsHelper.barcodeScanned(barcode, type: sourceType)
             castedView.infoTextVisible = false
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
         }

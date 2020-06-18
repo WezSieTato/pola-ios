@@ -118,7 +118,6 @@ final class AboutViewController: UITableViewController {
     // MARK: - Private
 
     private func performAction(row: AboutRow) {
-        AnalyticsHelper.aboutOpened(windowName: row.analitycsName)
         switch row.action {
         case let .link(url, openInternal):
             performLinkAction(title: row.title, url: url, openInternal: openInternal)

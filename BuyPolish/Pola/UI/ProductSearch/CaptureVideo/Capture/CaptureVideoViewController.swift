@@ -163,9 +163,8 @@ final class CaptureVideoViewController: UIViewController {
 
         uploadManager
             .send(images: capturedImages)
-            .done { [weak self, scanResult, imageManager] _ in
+            .done { [weak self, imageManager] _ in
                 KVNProgress.showSuccess(withStatus: R.string.localizable.captureVideoThanks())
-                AnalyticsHelper.teachReportSent(barcode: scanResult.code)
                 imageManager.removeImages()
                 self?.delegate?.captureVideoViewControllerSentImages()
                 self?.close()

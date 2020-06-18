@@ -6,7 +6,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        AnalyticsHelper.configure()
         applyAppearance()
 
         window = UIWindow(frame: UIScreen.main.bounds)

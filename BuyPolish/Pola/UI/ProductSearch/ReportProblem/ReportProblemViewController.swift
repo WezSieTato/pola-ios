@@ -82,7 +82,6 @@ final class ReportProblemViewController: UIViewController {
             .send(report: report)
             .done { [weak self, reason, productImageManager] _ in
                 KVNProgress.showSuccess(withStatus: R.string.localizable.reportSent())
-                AnalyticsHelper.reportSent(barcode: reason.barcode)
                 _ = productImageManager.removeImages(for: reason)
                 self?.close()
             }.catch { error in

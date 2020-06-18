@@ -2,7 +2,6 @@ import Foundation
 
 struct AboutRow {
     let title: String
-    let analitycsName: AnalitycsAboutRow
     let action: Action
 
     enum Action {
