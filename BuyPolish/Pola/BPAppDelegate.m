@@ -10,7 +10,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [BPAnalyticsHelper configure];
     [self configureObjection];
 
     [self applyAppearance];

@@ -119,8 +119,6 @@ objection_requires_sel(@selector(flashlightManager))
 }
 
 - (void)didTapMenuButton:(UIButton *)button {
-    [BPAnalyticsHelper aboutOpened:@"About Menu"];
-
     UIViewController *vc = [[AboutViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:nvc animated:YES completion:nil];
@@ -177,7 +175,6 @@ objection_requires_sel(@selector(flashlightManager))
     }
 
     if ([self addCardAndDownloadDetails:barcode]) {
-        [BPAnalyticsHelper barcodeScanned:barcode type:sourceType];
         [self.castView setInfoTextVisible:NO];
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
         self.lastBardcodeScanned = barcode;

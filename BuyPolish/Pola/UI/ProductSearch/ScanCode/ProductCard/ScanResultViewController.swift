@@ -54,7 +54,6 @@ class ScanResultViewController: UIViewController {
         firstly {
             productManager.retrieveProduct(barcode: barcode)
         }.done{ [weak self] scanResult in
-            AnalyticsHelper.received(productResult: scanResult)
             if let `self` = self {
                 self.fillViewWithData(scanResult: scanResult)
                 self.delegate?.scanResultViewController(self, didFetchResult: scanResult.bpScanResult)
@@ -125,7 +124,6 @@ class ScanResultViewController: UIViewController {
         guard let productId = scanResult?.productId else {
             return
         }
-        AnalyticsHelper.reportShown(barcode: barcode)
         let vc = DI.container.resolve(ReportProblemViewController.self,
                                       argument: ReportProblemReason.product(productId, barcode))!
         present(vc, animated: true, completion: nil)
@@ -136,7 +134,6 @@ class ScanResultViewController: UIViewController {
         guard let scanResult = scanResult else {
             return
         }
-        AnalyticsHelper.teachReportShow(barcode: barcode)
         let captureVideoNavigationController = BPCaptureVideoNavigationController(scanResult: scanResult.bpScanResult)
         captureVideoNavigationController.captureDelegate = self
         present(captureVideoNavigationController, animated: true, completion: nil)
@@ -166,8 +163,5 @@ extension ScanResultViewController: CardStackViewControllerCard {
     
     func didBecameExpandedCard() {
         castedView.scrollViewForContentView.flashScrollIndicators()
-        if let scanResult = scanResult {
-            AnalyticsHelper.opensCard(productResult: scanResult)
-        }
     }
 }

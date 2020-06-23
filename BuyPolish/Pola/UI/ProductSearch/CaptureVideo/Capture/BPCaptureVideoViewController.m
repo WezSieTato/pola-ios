@@ -149,7 +149,6 @@ objection_requires_sel(@selector(videoManager), @selector(imageManager), @select
             [KVNProgress showErrorWithStatus:NSLocalizedString(@"CaptureVideo.Failed", nil)];
         } else {
             [KVNProgress showSuccessWithStatus:NSLocalizedString(@"CaptureVideo.Thanks", nil)];
-            [BPAnalyticsHelper teachReportSent:self.scanResult.code];
         }
         [strongSelf.delegate captureVideoViewController:strongSelf wantsDismissWithSuccess:true];
     };
