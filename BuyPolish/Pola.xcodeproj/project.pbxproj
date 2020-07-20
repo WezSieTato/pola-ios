@@ -163,7 +163,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D08E82319A7621A00879BD2 /* Pola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pola.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D08E82319A7621A00879BD2 /* PolaObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolaObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D08E82619A7621A00879BD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D08E82819A7621A00879BD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1D08E82A19A7621A00879BD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -433,7 +433,7 @@
 		1D08E82419A7621A00879BD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D08E82319A7621A00879BD2 /* Pola.app */,
+				1D08E82319A7621A00879BD2 /* PolaObjC.app */,
 				1D08E84319A7621A00879BD2 /* PolaTests.xctest */,
 				84B1B362225F975A009FA909 /* PolaUITests.xctest */,
 			);
@@ -887,12 +887,12 @@
 		84B1B363225F975A009FA909 /* PolaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9E35D7AB24C657C700C63C11 /* PolaPerformanceTestCase.swift */,
 				841DDD6B2311ECD200CB82DC /* MockServer */,
 				84E708262280A40300402E26 /* PageObjects */,
 				840938A3231F0183003FC0E1 /* Tests */,
 				84034B7E23CCA49600E01157 /* FailureDiffs */,
 				84B1B366225F975A009FA909 /* Info.plist */,
+				9E35D7AB24C657C700C63C11 /* PolaPerformanceTestCase.swift */,
 				847AE94623072E9B00E645ED /* ReferenceImages_64 */,
 				84034B7D23CCA48000E01157 /* SnapshotFailedTests */,
 				84E708312280A40300402E26 /* TestData.swift */,
@@ -987,7 +987,7 @@
 			);
 			name = Pola;
 			productName = BuyPolish;
-			productReference = 1D08E82319A7621A00879BD2 /* Pola.app */;
+			productReference = 1D08E82319A7621A00879BD2 /* PolaObjC.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1D08E84219A7621A00879BD2 /* PolaTests */ = {
@@ -1042,7 +1042,7 @@
 				ORGANIZATIONNAME = PJMS;
 				TargetAttributes = {
 					1D08E82219A7621A00879BD2 = {
-						DevelopmentTeam = 9NBWKG2G3X;
+						DevelopmentTeam = 8YUF96J47T;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -1537,7 +1537,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NBWKG2G3X;
+				DEVELOPMENT_TEAM = 8YUF96J47T;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1551,8 +1551,8 @@
 				INFOPLIST_FILE = "Pola/SupportingFiles/Pola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola.Objc;
+				PRODUCT_NAME = PolaObjC;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1570,7 +1570,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NBWKG2G3X;
+				DEVELOPMENT_TEAM = 8YUF96J47T;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1584,8 +1584,8 @@
 				INFOPLIST_FILE = "Pola/SupportingFiles/Pola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kj.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola.Objc;
+				PRODUCT_NAME = PolaObjC;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

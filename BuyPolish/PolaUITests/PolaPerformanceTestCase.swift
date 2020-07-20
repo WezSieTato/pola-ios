@@ -1,7 +1,7 @@
 import XCTest
 
 class PolaPerformanceTestCase: XCTestCase {
-    let iterations: Int = 3
+    let iterations: Int = 10
 
     func launchApp() -> ScanBarcodePage {
         let app = XCUIApplication()

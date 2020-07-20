@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-               BuildableName = "Pola.app"
+               BuildableName = "PolaObjC.app"
                BlueprintName = "Pola"
                ReferencedContainer = "container:Pola.xcodeproj">
             </BuildableReference>
@@ -41,23 +41,11 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "NO">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D08E84219A7621A00879BD2"
-               BuildableName = "PolaTests.xctest"
-               BlueprintName = "PolaTests"
-               ReferencedContainer = "container:Pola.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaObjC.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>
@@ -74,8 +62,18 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D08E84219A7621A00879BD2"
+               BuildableName = "PolaTests.xctest"
+               BlueprintName = "PolaTests"
+               ReferencedContainer = "container:Pola.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -92,13 +90,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaObjC.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -111,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaObjC.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>
