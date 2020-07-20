@@ -95,7 +95,6 @@
 		840938AB231F0183003FC0E1 /* EnterBarcodePageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938A5231F0183003FC0E1 /* EnterBarcodePageUITests.swift */; };
 		840938AC231F0183003FC0E1 /* ScanBarcodeWithResultPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938A6231F0183003FC0E1 /* ScanBarcodeWithResultPageUITests.swift */; };
 		840938AD231F0183003FC0E1 /* ReportBugPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938A7231F0183003FC0E1 /* ReportBugPageUITests.swift */; };
-		840938AE231F0183003FC0E1 /* ISBNPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938A8231F0183003FC0E1 /* ISBNPageUITests.swift */; };
 		840938AF231F0183003FC0E1 /* CompanyPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938A9231F0183003FC0E1 /* CompanyPageUITests.swift */; };
 		840938B1231F0202003FC0E1 /* ScanBarcodePage+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938B0231F0202003FC0E1 /* ScanBarcodePage+TestData.swift */; };
 		840938B3231F0890003FC0E1 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840938B2231F088F003FC0E1 /* ResultPage.swift */; };
@@ -115,6 +114,7 @@
 		849BBA002298435D00347863 /* UIView+SafeAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BB9FF2298435D00347863 /* UIView+SafeAreaInsets.m */; };
 		84A81C5023EE1DBE00464745 /* BaseGalleryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A81C4F23EE1DBE00464745 /* BaseGalleryPage.swift */; };
 		84BB7A4423172BC00043D8B0 /* MockServerRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB7A4323172BC00043D8B0 /* MockServerRunner.swift */; };
+		84BD7CBD24C78574003613DE /* OpenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD7CBC24C78574003613DE /* OpenAppUITests.swift */; };
 		84E708362280A40400402E26 /* InformationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E708272280A40300402E26 /* InformationPage.swift */; };
 		84E708372280A40400402E26 /* ScanBarcodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E708282280A40300402E26 /* ScanBarcodePage.swift */; };
 		84E708382280A40400402E26 /* BasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E708292280A40300402E26 /* BasePage.swift */; };
@@ -123,14 +123,13 @@
 		84E7083B2280A40400402E26 /* ScanBarcodeWithResultsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7082C2280A40300402E26 /* ScanBarcodeWithResultsPage.swift */; };
 		84E7083C2280A40400402E26 /* EnterBarcodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7082D2280A40300402E26 /* EnterBarcodePage.swift */; };
 		84E7083D2280A40400402E26 /* SafariPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7082E2280A40300402E26 /* SafariPage.swift */; };
-		84E7083E2280A40400402E26 /* PolaUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7082F2280A40300402E26 /* PolaUITestCase.swift */; };
 		84E708402280A40400402E26 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E708312280A40300402E26 /* TestData.swift */; };
 		8C9A524C67006D5D87D36FEE /* Pods_Pola_PolaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C1969BFE86FEF4E186B26D /* Pods_Pola_PolaUITests.framework */; };
 		9E188D93223063ED00325383 /* LaunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E188D91223063EC00325383 /* LaunchScreen.xcassets */; };
+		9E35D7AC24C657C700C63C11 /* PolaPerformanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35D7AB24C657C700C63C11 /* PolaPerformanceTestCase.swift */; };
 		9E7BE9472401597F0070BF8D /* TeachPolaPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE9462401597F0070BF8D /* TeachPolaPageUITests.swift */; };
 		9E7BE94924015B180070BF8D /* TeachPolaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94824015B180070BF8D /* TeachPolaPage.swift */; };
 		9E7BE94B2401605F0070BF8D /* RecordVideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94A2401605F0070BF8D /* RecordVideoPage.swift */; };
-		9E7BE94D240164690070BF8D /* ScanBarcodePageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94C240164690070BF8D /* ScanBarcodePageUITests.swift */; };
 		9E7BE94F240167A50070BF8D /* RecordVideoPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7BE94E240167A50070BF8D /* RecordVideoPageUITests.swift */; };
 		ABCA9D8499A8FF36227B6C94 /* UIApplication+BPStatusBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA997979B62F78CFCB7E19 /* UIApplication+BPStatusBarHeight.m */; };
 		C06EE3351F20D24E005B2B57 /* BPAPIAccessor+BPCapturedImagesData.m in Sources */ = {isa = PBXBuildFile; fileRef = C06EE3341F20D24E005B2B57 /* BPAPIAccessor+BPCapturedImagesData.m */; };
@@ -317,7 +316,6 @@
 		840938A5231F0183003FC0E1 /* EnterBarcodePageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterBarcodePageUITests.swift; sourceTree = "<group>"; };
 		840938A6231F0183003FC0E1 /* ScanBarcodeWithResultPageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBarcodeWithResultPageUITests.swift; sourceTree = "<group>"; };
 		840938A7231F0183003FC0E1 /* ReportBugPageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBugPageUITests.swift; sourceTree = "<group>"; };
-		840938A8231F0183003FC0E1 /* ISBNPageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNPageUITests.swift; sourceTree = "<group>"; };
 		840938A9231F0183003FC0E1 /* CompanyPageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyPageUITests.swift; sourceTree = "<group>"; };
 		840938B0231F0202003FC0E1 /* ScanBarcodePage+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanBarcodePage+TestData.swift"; sourceTree = "<group>"; };
 		840938B2231F088F003FC0E1 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
@@ -341,6 +339,7 @@
 		84B1B362225F975A009FA909 /* PolaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1B366225F975A009FA909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BB7A4323172BC00043D8B0 /* MockServerRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServerRunner.swift; sourceTree = "<group>"; };
+		84BD7CBC24C78574003613DE /* OpenAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAppUITests.swift; sourceTree = "<group>"; };
 		84E708272280A40300402E26 /* InformationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationPage.swift; sourceTree = "<group>"; };
 		84E708282280A40300402E26 /* ScanBarcodePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBarcodePage.swift; sourceTree = "<group>"; };
 		84E708292280A40300402E26 /* BasePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePage.swift; sourceTree = "<group>"; };
@@ -349,13 +348,12 @@
 		84E7082C2280A40300402E26 /* ScanBarcodeWithResultsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBarcodeWithResultsPage.swift; sourceTree = "<group>"; };
 		84E7082D2280A40300402E26 /* EnterBarcodePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterBarcodePage.swift; sourceTree = "<group>"; };
 		84E7082E2280A40300402E26 /* SafariPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPage.swift; sourceTree = "<group>"; };
-		84E7082F2280A40300402E26 /* PolaUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolaUITestCase.swift; sourceTree = "<group>"; };
 		84E708312280A40300402E26 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		9E188D91223063EC00325383 /* LaunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchScreen.xcassets; sourceTree = "<group>"; };
+		9E35D7AB24C657C700C63C11 /* PolaPerformanceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolaPerformanceTestCase.swift; sourceTree = "<group>"; };
 		9E7BE9462401597F0070BF8D /* TeachPolaPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachPolaPageUITests.swift; sourceTree = "<group>"; };
 		9E7BE94824015B180070BF8D /* TeachPolaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachPolaPage.swift; sourceTree = "<group>"; };
 		9E7BE94A2401605F0070BF8D /* RecordVideoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoPage.swift; sourceTree = "<group>"; };
-		9E7BE94C240164690070BF8D /* ScanBarcodePageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBarcodePageUITests.swift; sourceTree = "<group>"; };
 		9E7BE94E240167A50070BF8D /* RecordVideoPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoPageUITests.swift; sourceTree = "<group>"; };
 		ABCA997979B62F78CFCB7E19 /* UIApplication+BPStatusBarHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+BPStatusBarHeight.m"; sourceTree = "<group>"; };
 		ABCA9A3E3B8A8B7C925052B6 /* UIApplication+BPStatusBarHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+BPStatusBarHeight.h"; sourceTree = "<group>"; };
@@ -848,13 +846,12 @@
 		840938A3231F0183003FC0E1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84BD7CBC24C78574003613DE /* OpenAppUITests.swift */,
 				840938A9231F0183003FC0E1 /* CompanyPageUITests.swift */,
 				840938A5231F0183003FC0E1 /* EnterBarcodePageUITests.swift */,
-				840938A8231F0183003FC0E1 /* ISBNPageUITests.swift */,
 				840938A4231F0183003FC0E1 /* InformationPageUITests.swift */,
 				9E7BE94E240167A50070BF8D /* RecordVideoPageUITests.swift */,
 				840938A7231F0183003FC0E1 /* ReportBugPageUITests.swift */,
-				9E7BE94C240164690070BF8D /* ScanBarcodePageUITests.swift */,
 				840938A6231F0183003FC0E1 /* ScanBarcodeWithResultPageUITests.swift */,
 				9E7BE9462401597F0070BF8D /* TeachPolaPageUITests.swift */,
 			);
@@ -890,12 +887,12 @@
 		84B1B363225F975A009FA909 /* PolaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9E35D7AB24C657C700C63C11 /* PolaPerformanceTestCase.swift */,
 				841DDD6B2311ECD200CB82DC /* MockServer */,
 				84E708262280A40300402E26 /* PageObjects */,
 				840938A3231F0183003FC0E1 /* Tests */,
 				84034B7E23CCA49600E01157 /* FailureDiffs */,
 				84B1B366225F975A009FA909 /* Info.plist */,
-				84E7082F2280A40300402E26 /* PolaUITestCase.swift */,
 				847AE94623072E9B00E645ED /* ReferenceImages_64 */,
 				84034B7D23CCA48000E01157 /* SnapshotFailedTests */,
 				84E708312280A40300402E26 /* TestData.swift */,
@@ -1355,19 +1352,18 @@
 			files = (
 				84A81C5023EE1DBE00464745 /* BaseGalleryPage.swift in Sources */,
 				9E7BE9472401597F0070BF8D /* TeachPolaPageUITests.swift in Sources */,
-				9E7BE94D240164690070BF8D /* ScanBarcodePageUITests.swift in Sources */,
 				841DDD6F2311ECD200CB82DC /* MockServer.swift in Sources */,
 				840938B3231F0890003FC0E1 /* ResultPage.swift in Sources */,
 				9E7BE94924015B180070BF8D /* TeachPolaPage.swift in Sources */,
 				84E7083B2280A40400402E26 /* ScanBarcodeWithResultsPage.swift in Sources */,
 				84E708402280A40400402E26 /* TestData.swift in Sources */,
 				840938AA231F0183003FC0E1 /* InformationPageUITests.swift in Sources */,
-				840938AE231F0183003FC0E1 /* ISBNPageUITests.swift in Sources */,
 				84BB7A4423172BC00043D8B0 /* MockServerRunner.swift in Sources */,
 				847AE94923093E7700E645ED /* ISBNPage.swift in Sources */,
 				84E708372280A40400402E26 /* ScanBarcodePage.swift in Sources */,
+				84BD7CBD24C78574003613DE /* OpenAppUITests.swift in Sources */,
+				9E35D7AC24C657C700C63C11 /* PolaPerformanceTestCase.swift in Sources */,
 				84E7083C2280A40400402E26 /* EnterBarcodePage.swift in Sources */,
-				84E7083E2280A40400402E26 /* PolaUITestCase.swift in Sources */,
 				84401E2023C0E2A800F4D035 /* PhotosGalleryPage.swift in Sources */,
 				84E708392280A40400402E26 /* ReportBugPage.swift in Sources */,
 				9E7BE94B2401605F0070BF8D /* RecordVideoPage.swift in Sources */,
