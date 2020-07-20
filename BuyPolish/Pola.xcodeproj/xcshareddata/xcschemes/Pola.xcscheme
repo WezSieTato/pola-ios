@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-               BuildableName = "Pola.app"
+               BuildableName = "PolaSwift.app"
                BlueprintName = "Pola"
                ReferencedContainer = "container:Pola.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaSwift.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>
@@ -90,7 +90,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaSwift.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>
@@ -107,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D08E82219A7621A00879BD2"
-            BuildableName = "Pola.app"
+            BuildableName = "PolaSwift.app"
             BlueprintName = "Pola"
             ReferencedContainer = "container:Pola.xcodeproj">
          </BuildableReference>

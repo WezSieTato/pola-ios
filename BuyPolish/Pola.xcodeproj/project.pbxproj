@@ -187,7 +187,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D08E82319A7621A00879BD2 /* Pola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pola.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D08E82319A7621A00879BD2 /* PolaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D08E82619A7621A00879BD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D08E82819A7621A00879BD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1D08E82A19A7621A00879BD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -410,7 +410,7 @@
 		1D08E82419A7621A00879BD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D08E82319A7621A00879BD2 /* Pola.app */,
+				1D08E82319A7621A00879BD2 /* PolaSwift.app */,
 				1D08E84319A7621A00879BD2 /* PolaTests.xctest */,
 				84B1B362225F975A009FA909 /* PolaUITests.xctest */,
 			);
@@ -887,7 +887,7 @@
 			);
 			name = Pola;
 			productName = BuyPolish;
-			productReference = 1D08E82319A7621A00879BD2 /* Pola.app */;
+			productReference = 1D08E82319A7621A00879BD2 /* PolaSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1D08E84219A7621A00879BD2 /* PolaTests */ = {
@@ -1146,7 +1146,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/Pola/R.generated.swift",
+				$SRCROOT/Pola/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1536,8 +1536,8 @@
 				INFOPLIST_FILE = "Pola/SupportingFiles/Pola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola.Swift;
+				PRODUCT_NAME = PolaSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -1569,8 +1569,8 @@
 				INFOPLIST_FILE = "Pola/SupportingFiles/Pola-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siema.Pola.Swift;
+				PRODUCT_NAME = PolaSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 5.0;
