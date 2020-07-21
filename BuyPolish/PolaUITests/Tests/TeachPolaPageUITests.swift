@@ -1,26 +1,12 @@
 import XCTest
 
-final class TeachPolaPageUITests: PolaUITestCase {
-    
-    var page: TeachPolaPage!
-    
-    override func setUp() {
-        super.setUp()
-        recordMode = false
-        
-        page = startingPageObject
-            .enterCodeAndWaitForResult(codeData: .Naleczowianka)
-            .tapHelpPolaButton()
-    }
-    
+final class TeachPolaPageUITests: PolaPerformanceTestCase {
     func testOpenPage() {
-        snapshotVerifyView()
+        measureAfterOpen { startPage in
+            startPage
+                .enterCodeAndWaitForResult(codeData: .Naleczowianka)
+                .tapHelpPolaButton()
+                .done()
+        }
     }
-        
-    func testTapClose() {
-        page.tapCloseButton().done()
-        
-        snapshotVerifyView()
-    }
-    
 }
