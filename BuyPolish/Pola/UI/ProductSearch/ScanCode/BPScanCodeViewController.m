@@ -12,12 +12,14 @@ static NSTimeInterval const kAnimationTime = 0.15;
 
 @interface BPScanCodeViewController () <ScanResultViewControllerDelegate,
                                         CardStackViewControllerDelegate,
-                                        CodeScannerManagerDelegate>
+                                        CodeScannerManagerDelegate,
+                                        BPCaptureVideoNavigationControllerDelegate>
 
 @property (nonatomic) BPKeyboardViewController *keyboardViewController;
 @property (nonatomic) ScannerCodeViewController *scannerCodeViewController;
 @property (nonatomic, readonly) BPFlashlightManager *flashlightManager;
 @property (copy, nonatomic) NSString *lastBardcodeScanned;
+@property (nonatomic) BPScanResult *lastScanResult;
 @property (nonatomic) BOOL addingCardEnabled;
 @property (nonatomic) CardStackViewController *stackViewController;
 
@@ -138,9 +140,16 @@ objection_requires_sel(@selector(flashlightManager))
 }
 
 - (void)didTapTeachButton:(UIButton *)button {
-    //TODO: Use last scanResultViewController to show teach
+    [self showCaptureVideoWithScanResult:self.lastScanResult];
 }
 
+- (void)showCaptureVideoWithScanResult:(BPScanResult *)scanResult {
+    BPCaptureVideoNavigationController *captureVideoNavigationController =
+        [[BPCaptureVideoNavigationController alloc] initWithScanResult:scanResult];
+    captureVideoNavigationController.captureDelegate = self;
+    [self presentViewController:captureVideoNavigationController animated:YES completion:nil];
+}
+    
 - (void)didTapFlashlightButton:(UIButton *)button {
     [self.flashlightManager toggleWithCompletionBlock:^(BOOL success){
         //TODO: Add error message after consultation with UX
@@ -309,6 +318,7 @@ objection_requires_sel(@selector(flashlightManager))
 
 - (void)scanResultViewController:(ScanResultViewController *)vc didFetchResult:(BPScanResult *)result {
     BOOL visible = result.askForPics;
+    self.lastScanResult = result;
     UIButton *teachButton = self.castView.teachButton;
     teachButton.hidden = !visible;
     [teachButton setTitle:result.askForPicsPreview forState:UIControlStateNormal];
@@ -319,6 +329,18 @@ objection_requires_sel(@selector(flashlightManager))
     UIButton *teachButton = self.castView.teachButton;
     teachButton.hidden = YES;
     [teachButton setNeedsLayout];
+}
+
+#pragma mark - BPCaptureVideoNavigationControllerDelegate
+
+- (void)captureVideoNavigationController:(BPCaptureVideoNavigationController *)controller
+                 wantsDismissWithSuccess:(BOOL)success {
+    if (success) {
+        UIButton *teachButton = self.castView.teachButton;
+        teachButton.hidden = YES;
+        [teachButton setNeedsLayout];
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

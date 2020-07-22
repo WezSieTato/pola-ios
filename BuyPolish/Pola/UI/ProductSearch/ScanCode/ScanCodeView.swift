@@ -138,7 +138,7 @@ class ScanCodeView: UIView {
         rect = flashButton.frame
         rect.origin.x = scanCodeMargin
         rect.origin.y = scanCodeMargin + keyboardButton.frame.maxY
-        flashButton.frame = frame
+        flashButton.frame = rect
         
         rect = menuButton.frame
         rect.origin.x = bounds.width - scanCodeMargin - rect.width
