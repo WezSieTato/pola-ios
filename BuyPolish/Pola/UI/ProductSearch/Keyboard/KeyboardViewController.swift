@@ -7,7 +7,7 @@ protocol KeyboardViewControllerDelegate: class {
 }
 
 @objc(BPKeyboardViewController)
-class KeyboardViewController: UIViewController {
+final class KeyboardViewController: UIViewController {
     
     @objc
     weak var delegate: KeyboardViewControllerDelegate?

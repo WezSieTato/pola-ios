@@ -1,7 +1,7 @@
 import Foundation
 
 @objc
-class CardStackViewController: UIViewController {
+final class CardStackViewController: UIViewController {
     
     private var cards = [UIViewController]()
     private var castedView: CardStackView {

@@ -1,6 +1,6 @@
 import Alamofire
 
-class PutAmazonRequestFactory: MediaUploadRequestFactory {
+final class PutAmazonRequestFactory: MediaUploadRequestFactory {
     
     private let fileManager: FileManager
     

@@ -1,7 +1,7 @@
 import UIKit
 
 @objc(BPAboutWebViewController)
-class AboutWebViewController: UIViewController {
+final class AboutWebViewController: UIViewController {
     
     private let url: String
     

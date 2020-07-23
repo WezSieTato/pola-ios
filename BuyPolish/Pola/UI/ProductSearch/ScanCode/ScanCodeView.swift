@@ -1,7 +1,7 @@
 import UIKit
 
 @objc(BPScanCodeView)
-class ScanCodeView: UIView {
+final class ScanCodeView: UIView {
     
     private let stackView: CardStackView
     

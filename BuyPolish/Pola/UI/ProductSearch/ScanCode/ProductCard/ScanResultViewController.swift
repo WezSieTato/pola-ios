@@ -8,7 +8,7 @@ protocol ScanResultViewControllerDelegate: class {
     func scanResultViewControllerDidSentTeachReport(_ vc: ScanResultViewController)
 }
 
-class ScanResultViewController: UIViewController {
+final class ScanResultViewController: UIViewController {
     let barcode: String
     private let productManager: ProductManager
     private(set) var scanResult: ScanResult?

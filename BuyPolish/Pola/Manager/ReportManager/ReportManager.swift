@@ -1,7 +1,7 @@
 import PromiseKit
 import Alamofire
 
-class ReportManager {
+final class ReportManager {
     
     private let dataRequestFactory: DataRequestFactory
     private let uploadMediaRequestFactory: MediaUploadRequestFactory

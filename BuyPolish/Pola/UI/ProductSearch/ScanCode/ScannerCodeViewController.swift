@@ -1,7 +1,7 @@
 import UIKit
 
 @objc
-class ScannerCodeViewController: UIViewController {
+final class ScannerCodeViewController: UIViewController {
     private let codeScannerManager: CodeScannerManager
     
     @objc
