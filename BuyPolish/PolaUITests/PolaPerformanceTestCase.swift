@@ -1,7 +1,7 @@
 import XCTest
 
 class PolaPerformanceTestCase: XCTestCase {
-    let iterations: Int = 10
+    let iterations: Int = 50
 
     func launchApp() -> ScanBarcodePage {
         let app = XCUIApplication()
@@ -25,8 +25,9 @@ class PolaPerformanceTestCase: XCTestCase {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             let options = XCTMeasureOptions.default
             options.iterationCount = iterations
-            measureMetrics([XCTPerformanceMetric.wallClockTime],
-                           automaticallyStartMeasuring: false) {
+            options.invocationOptions = [.manuallyStart, .manuallyStop]
+            measure(metrics: [XCTClockMetric()],
+                    options: options) {
                 let page = launchApp()
                 startMeasuring()
                 block(page)
