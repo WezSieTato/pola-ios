@@ -53,4 +53,48 @@ platform :ios do
     )
   end
 
+  lane :test_compile_time do
+    iterations = 10
+    configuration = "Release"
+    for i in 1..iterations do
+      full_clean_compile(configuration: configuration)
+    end
+    for i in 1..iterations do
+      partially_clean_compile(configuration: configuration)
+    end
+    for i in 1..iterations do
+      not_clean_compile(configuration: configuration)
+    end
+  end
+
+  lane :full_clean_compile do |options|
+      clear_derived_data
+      xcodebuild(
+        scheme: "Pola",
+        destination: "name=iPhone 8",
+        configuration: options[:configuration],
+        clean: true,
+        build: true,
+      )
+  end
+
+  lane :partially_clean_compile do |options|
+    xcodebuild(
+      scheme: "Pola",
+      destination: "name=iPhone 8",
+      configuration: options[:configuration],
+      clean: true,
+      build: true,
+    )
+end
+
+lane :not_clean_compile do |options|
+  xcodebuild(
+    scheme: "Pola",
+    destination: "name=iPhone 8",
+    configuration: options[:configuration],
+    build: true,
+  )
+end
+
 end
