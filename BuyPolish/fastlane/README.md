@@ -12,7 +12,7 @@ Install _fastlane_ using
 ```
 [sudo] gem install fastlane -NV
 ```
-or alternatively using `brew cask install fastlane`
+or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
@@ -44,6 +44,26 @@ fastlane ios check_formatting
 ### ios format
 ```
 fastlane ios format
+```
+
+### ios test_compile_time
+```
+fastlane ios test_compile_time
+```
+
+### ios full_clean_compile
+```
+fastlane ios full_clean_compile
+```
+
+### ios partially_clean_compile
+```
+fastlane ios partially_clean_compile
+```
+
+### ios not_clean_compile
+```
+fastlane ios not_clean_compile
 ```
 
 
